@@ -1,0 +1,12 @@
+Alternative A - App Engine SDK Python
+
+1. Download the App Engine SDK Python and install it: https://cloud.google.com/appengine/docs/python/download
+2. Install IDE of choice (I Use PyCharm)
+
+
+Alternative B - Google Cloud SDK Shell
+
+1. Download the Google Cloud SDK Shell: https://cloud.google.com/sdk/docs/quickstart-windows
+2. Follow the guide: https://cloud.google.com/appengine/docs/python/quickstart
+3. Start server with: python "C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin\dev_appserver.py" "C:\projects\whatismyhostfile" .
+4. Install IDE of choice (I Use PyCharm)
