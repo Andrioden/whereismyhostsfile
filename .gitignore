@@ -1,0 +1,6 @@
+# CUSTOM STUFF
+.idea/*
+vcs.xml
+
+# PYTHON
+*.pyc
