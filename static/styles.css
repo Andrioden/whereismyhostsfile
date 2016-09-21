@@ -1,0 +1,46 @@
+/* Based on Color Palette: https://color.adobe.com/Neutral-Blue-color-theme-22361/ */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+    background-color: #FCFFF5;
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #91AA9D;
+
+    font-family: Arial,sans-serif;
+    font-size: 11px
+}
+
+.center {
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    width: 500px;
+    padding: 10px;
+}
+
+#helpText {
+    margin-top: 100px;
+    font-style: italic;
+    font-size: 90%;
+}
+
+#hostFilePath {
+    background-color: #D1DBBD;
+    border-radius: 5px;
+    border: 5px solid #193441;
+    font-size: 150%
+}
+
+a {
+    color: #193441;
+}
