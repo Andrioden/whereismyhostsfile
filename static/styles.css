@@ -6,18 +6,7 @@ html {
 }
 body {
     margin: 0 0 100px; /* bottom = footer height */
-    background-color: #FCFFF5;
-}
-footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 50px;
-    width: 100%;
-    background-color: #91AA9D;
-
-    font-family: Arial,sans-serif;
-    font-size: 11px
+    background-color: #ECF0F1;
 }
 
 .center {
@@ -35,12 +24,24 @@ footer {
 }
 
 #hostFilePath {
-    background-color: #D1DBBD;
+    background-color: #ECF0F1;
     border-radius: 5px;
     border: 5px solid #193441;
     font-size: 150%
 }
 
-a {
-    color: #193441;
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color: #2980B9;
+
+    font-family: Arial,sans-serif;
+    font-size: 11px
+}
+
+footer a {
+    color: #2C3E50;
 }
