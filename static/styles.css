@@ -6,7 +6,8 @@ html {
 }
 body {
     margin: 0 0 100px; /* bottom = footer height */
-    background-color: #ECF0F1;
+    /* Pattern from http://www.patternify.com/ */
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQYlWO4efPm/w8fPsDxzZs3/2MTY0AXwMb+8OEDQiG6BLoYAzaTsJnMgE0RNsXEKyTaapI8Q1TwEBvgADxlczjP2GOvAAAAAElFTkSuQmCC) repeat;
 }
 
 .center {
@@ -20,6 +21,7 @@ body {
 #helpText {
     margin-top: 100px;
     font-style: italic;
+    font-weight: bold;
     font-size: 90%;
 }
 
@@ -34,7 +36,7 @@ footer {
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 40px;
+    height: 50px;
     width: 100%;
     background-color: #2980B9;
 
