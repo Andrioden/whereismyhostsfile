@@ -24,6 +24,7 @@ function GetPathFromUserAgent() {
         {s:'Windows NT 4.0',        r:/(Windows NT 4.0|WinNT4.0|WinNT|Windows NT)/, path: "%WinDir%\\hosts"},
         {s:'Windows CE',            r:/Windows CE/,                                 path: "Registry: HKEY_LOCAL_MACHINE\\Comm\\Tcpip\\Hosts\\yourhostname"},
         {s:'Windows 3.11',          r:/Win16/,                                      path: "%WinDir%\\HOSTS"},
+        {s:'Windows',               r:/(Windows|Windows NT)/,                       path: "probably %SystemRoot%\\System32\\drivers\\etc\\hosts"},
         {s:'Android',               r:/Android/,                                    path: "/etc/hosts"},
         {s:'Open BSD',              r:/OpenBSD/,                                    path: "/etc/hosts"},
         {s:'Sun OS',                r:/SunOS/,                                      path: "/etc/inet/hosts"},
