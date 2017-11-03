@@ -9,10 +9,13 @@
     <meta name="keywords" content="hosts, host, hosts file, host file, find hosts file, find host file, os, operative system" />
     <meta name="author" content="André S. Hansen" />
 
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@1.4.1/dist/tippy.css">
     <link rel="shortcut icon" href="static/images/search_icon.png">
     <link rel="stylesheet" href="/static/styles.css">
 
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/tippy.js@1.4.1/dist/tippy.js"></script>
+
     <script src="/static/app.js"></script>
 </head>
 <body>
@@ -20,7 +23,7 @@
 
     <section>
         <div id="helpText" class="center">your hosts file is located here:</div>
-        <div id="hostFilePath" class="center"></div>
+        <div id="hostFilePathBox" class="center" title="Click inside to copy to clipboard" onclick="copyPathToClipboard()" ></div>
     </section>
 
     <footer>

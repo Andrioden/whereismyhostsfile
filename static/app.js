@@ -1,13 +1,26 @@
 $( document ).ready(function() {
-    $("#hostFilePath").html(GetPathFromUserAgent());
+    $("#hostFilePathBox").html(getPathFromUserAgent());
+    tippy("#hostFilePathBox", {
+        position: 'bottom',
+        arrow: true
+    })
 });
 
-function PromtCopy() {
-    window.prompt("Copy to clipboard: Ctrl+C, Enter", GetPathFromUserAgent());
+function copyPathToClipboard() {
+    copyToClipboard("#hostFilePathBox");
+}
+
+// From: https://stackoverflow.com/a/30905277
+function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
 }
 
 // Inspired by http://stackoverflow.com/a/9514476
-function GetPathFromUserAgent() {
+function getPathFromUserAgent() {
     var clientStrings = [
         {s:'Windows 11.x',          r:/(Windows 11|Windows NT 11)/,                 path: "%SystemRoot%\\System32\\drivers\\etc\\hosts"},
         {s:'Windows 10.x',          r:/(Windows 10|Windows NT 10)/,                 path: "%SystemRoot%\\System32\\drivers\\etc\\hosts"},
