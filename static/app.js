@@ -12,11 +12,27 @@ function copyPathToClipboard() {
 
 // From: https://stackoverflow.com/a/30905277
 function copyToClipboard(element) {
-    var $temp = $("<input>");
-    $("body").append($temp);
-    $temp.val($(element).text()).select();
-    document.execCommand("copy");
-    $temp.remove();
+    var selectionText = getSelectionText();
+    if (selectionText.length != 0)
+        document.execCommand("copy");
+    else {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(element).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+    }
+}
+
+// From: https://stackoverflow.com/a/5379408
+function getSelectionText() {
+    var text = "";
+    if (window.getSelection) {
+        text = window.getSelection().toString();
+    } else if (document.selection && document.selection.type != "Control") {
+        text = document.selection.createRange().text;
+    }
+    return text;
 }
 
 // Inspired by http://stackoverflow.com/a/9514476

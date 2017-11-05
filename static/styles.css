@@ -30,7 +30,12 @@ body {
     border-radius: 5px;
     border: 5px solid #193441;
     font-size: 150%;
-    cursor: copy;
+    cursor: pointer;
+}
+
+#hostFilePathBox:hover
+{
+    background-color: gray
 }
 
 footer {
